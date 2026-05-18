@@ -27,3 +27,6 @@ lint: ## Run linters
 
 fmt: ## Fix formatting issues
 	goimports -w .
+
+build: deps ## Build the binary
+	go build -a -o php-fpm_exporter main.go
